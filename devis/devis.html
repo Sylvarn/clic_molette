@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+ 
+<html>
+ 
+   <head>
+		<html lang="fr">
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet">
+		<link rel="icon" href="img/clicmolette.ico" />
+		<title>Clic molette</title>
+   </head>
+ 
+   <body>
+
+   	<header id="tete">
+		
+   		<h1>Clic molette</h1>
+   		<h2>Bienvenue !</h2>
+   		<nav>
+   			<a href="../index.html">Accueil</a><a href="#">Devis</a><a href="#">Média</a><a href="#">Tuto</a>
+   		</nav>
+   	</header>
+		<section id="corps">
+            
+            <article>
+                <h2 >
+                    Demande de devis
+                </h2>
+                <figure>
+                    <img src="img/notreprojet.png" width="600" style="float:right" />
+                </figure>   
+                <div class="FormulaireDevis">
+                    
+                    <form method="post" action="traitement.php">
+
+                        <!----❀ Nom & prénom +mail ❀---->
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" required>
+                        </br>
+                        <label for="prenom">Prénom </label>
+                        <input type="text" id="prenom" name="prenom"> 
+                        </br>
+                        <label for="mail">Mail*</label>
+                        <input type="text" id="mail" name="mail" required>
+                        </br>
+            
+                        <!----❀ Besoin ❀---->
+                        <label for="adress">Type de service </label>
+                        <select id="service" name="service">
+                            <option value=""></option>
+                            <option value="vip">Un site complet</option>
+                            <option value="design">Web Design</option>
+                            <option value="repair">Réparation</option>
+                            <option value="help">Aide au cahier des charges</option>
+                            <option value="opti">Optimisation de parcours utilisateurs</option>
+                            <option value="admin">Conception/Administration d'un espace d'administration</option>
+                            <option value="strat">Développement stratégique</option>
+                        </select></br>
+                        
+                        <!----❀ précisez les besoin ❀---->
+                        <label for="besoin">Précisez vos besoin:</label>
+                        <textarea rows="6" name="besoin"> </textarea>
+                        </br>
+            
+                        <!----❀ BOUTONS: Envoyer et Effacer ❀---->
+                        <p><input type="submit" value="Envoyer">
+                        <input type="reset" value="Effacer"></p>
+                    </form>
+                    <br><br><br><br><br>
+                </div>
+                <blockquote id="citation">
+                    </br>“La théorie, c’est quand on sait tout et que rien ne fonctionne. </br>La pratique, c’est quand tout fonctionne et que personne ne sait pourquoi. </br>Ici, nous avons réuni théorie et pratique : rien ne fonctionne … et personne ne sait pourquoi !”
+                </blockquote>
+
+		</section>
+
+		<footer id="pied">
+   		<address>36 Rue de la Poupée qui Tousse, 27000 Evreux </address>
+   	</footer>
+   </body> 
+</html>
