@@ -161,27 +161,71 @@ body
 	background-color: rgba(255, 255, 255, .9);
 }
 
-
-a[href $=".pdf"]
+body img
 {
-	background-image: url("img/pdf.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding-left: 2em;
+	max-width: 100%;
+	border-radius: 15px;
+	filter: drop-shadow(0 0 0.75rem #9D1103);
 }
-
-a[href $=".docx"]
-{
-	background-image: url("img/word.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding-left: 2em;
-}
-
 
 #corps
 {
-	margin-left: 240px;
+	margin-top: 50px;
+	margin-left: 250px;
+}
+
+.box
+{
+	background: linear-gradient(to right , #9D1103 , #C71605 , #EC4333);
+	color: white;
+	width: 210px;
+	height: 50px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	overflow: hidden;
+	transition-duration: 0.5s;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.box_long
+{
+	background: linear-gradient(to right , #9D1103 , #C71605 , #EC4333);
+	color: white;
+	width: 210px;
+	height: 50px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	overflow: hidden;
+	transition-duration: 0.5s;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.box:hover
+{
+	height: 150px;
+}
+
+.box_long:hover
+{
+	height: 150px;
+}
+
+.box h4
+{
+	margin-top: 15px;
+}
+
+
+.box_long h4
+{
+	margin-top: 5px;
+	margin-bottom: 20px;
 }
 
 h1
@@ -196,125 +240,14 @@ h1
 h2
 {
 	font-family: struck;
+	text-align: right;
+	margin-right: 80px;
 }
 
 
 a 
 {
 	color: inherit;
-}
-
-#bq
-{
-	text-overflow: ellipsis;
-	overflow:hidden;
-	white-space:nowrap;
-	background-color: #990000;
-	color: white;
-	font-family: Satisfy, elfique, cursive;
-	font-size: 1.5em;
-	text-align: justify;
-	padding: 1em;
-	line-height: 2em;
-	letter-spacing: .1em;
-	font-style: italic;
-	border-radius: 1em;
-	width: 120px;
-	height: 30px;
-	transition: width 0.5s 0.8s , height 0.8s;
-}
-
-#bq:hover 
-{
-	white-space:normal;	
-	width: 620px;
-	height: 500px;
-	transition: width 0.5s , height 0.8s 0.5s;
-}
-
-/* tableau population */
-
-#pop
-{
-	border-collapse: collapse;
-}
-
-#pop thead
-{
-	color: white;
-	background: linear-gradient(to bottom , #31B3EC , #2488B4);
-	border: 1.5px solid #2488B4;
-}
-
-#pop th , td
-{
-	padding: .5em 1em; 
-}
-
-#pop tbody 
-{
-	border-bottom: 1px solid #333;
-}
-
-#pop tbody td 
-{
-	border: 1px solid #333;
-	border-style: none solid;
-}
-
-
-#pop tbody tr:nth-child(odd)
-{
-	background-color: #dddddd;
-}
-
-#pop tbody tr:nth-child(even)
-{
-	background-color: #9c9c9c;
-}
-
-#pop tbody td:last-child
-{
-	text-align: right;
-	background-color: rgba(255, 255, 0, 0.5);
-}
-
-/* formulaire inscription */
-
-#inscription
-{
-  width: 400px;
-}
-
-#inscription fieldset 
-{
-	border-radius: 15px;
-}
-
-#inscription label
-{
-  width: 120px;
-  display: inline-block; 
-  margin: 6px;
-}
-
-#inscription input[type="text"] , input[type="date"] , textarea 
-{
-  box-sizing: border-box;
-  width: 210px;
-  margin: 6px;
-  vertical-align: top;
-}
-
-#inscription #regl label
-{
-	width: auto;
-	vertical-align: baseline;
-}
-
-#inscription input:focus, textarea:focus
-{
-  background: #eaeaea;
 }
 
 
